@@ -99,7 +99,7 @@ animation: snowfalling 50s infinite;
 .botton1 p{
   position: fixed;
   font-weight: normal;
-  margin: -5vh 0 0 2.1vw;
+  margin: -5.5vh 0 0 2.1vw;
 }
 .botton1 #botton_light1{
   visibility: hidden;
@@ -117,7 +117,7 @@ animation: snowfalling 50s infinite;
 .botton2 p{
   position: fixed;
   font-weight: normal;
-  margin: -5vh 0 0 3.6vw;
+  margin: -5.5vh 0 0 3.6vw;
 }
 .botton2 #botton_light2{
   visibility: hidden;
@@ -135,7 +135,7 @@ animation: snowfalling 50s infinite;
 .botton3 p{
   position: fixed;
   font-weight: normal;
-  margin: -5vh 0 0 3.6vw;
+  margin: -5.5vh 0 0 3.6vw;
 }
 .botton3 #botton_light3{
   visibility: hidden;
@@ -153,7 +153,7 @@ animation: snowfalling 50s infinite;
 .botton4 p{
   position: fixed;
   font-weight: normal;
-  margin: -5vh 0 0 3.6vw;
+  margin: -5.5vh 0 0 3.6vw;
 }
 .botton4 #botton_light4{
   visibility: hidden;
