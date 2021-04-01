@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script>
+
+
+
+$(document). ready(function(){
+  // let build = "<div class='blok4'> </div>"
+  let count = 0;
+ $("#plus").click(function(){
+   count -= 1;
+   if (count >= 1) {
+     console.log('1');
+     // // $('.zavod').append(build);
+     $("#hidden1").css("visibility", "hidden")
+     // $("#hidden6").css("visibility", "visible")
+   };
+   if (count >= 2) {
+     console.log('1');
+     $("#hidden6").css("visibility", "hidden")
+     $(".light2").css("display", "block")
+   };
+   if (count >= 3) {
+     console.log('1');
+     $("#hidden8").css("visibility", "hidden")
+   };
+   if (count >= 4) {
+     console.log('1');
+     $("#hidden9").css("visibility", "hidden")
+   };
+   if (count >= 5) {
+     console.log('1');
+     $("#hidden7").css("visibility", "hidden")
+   };
+   if (count >= 6) {
+     console.log('1');
+     $("#hidden62").css("visibility", "hidden")
+   };
+   if (count >= 7) {
+     console.log('1');
+     $("#hidden2").css("visibility", "hidden")
+   };
+   if (count >= 8) {
+     console.log('1');
+     $("#hidden63").css("visibility", "hidden")
+   };
+
+    $(".numbers").css({
+      "background-position": function(index, value){
+        return parseFloat (value) +60;
+      }
+    });
+});
+
+$("#minus").click(function(){
+   $(".numbers").css({
+     "background-position": function(index, value){
+       return parseFloat (value) -60;
+     }
+   });
+   $(function () {
+     $('#minus').click(function () {
+       count += 1;
+       if (count >= 5) {
+         console.log('1');
+         $("#hidden1").css("visibility", "visible")
+       };
+       if (count >= 2) {
+         console.log('1');
+         $("#hidden6").css("visibility", "visible")
+         $(".light2").css("display", "none")
+       };
+       if (count >= 3) {
+         console.log('1');
+         $("#hidden8").css("visibility", "visible")
+       };
+       if (count >= 4) {
+         console.log('1');
+         $("#hidden9").css("visibility", "visible")
+       };
+       if (count >= 5) {
+         console.log('1');
+         $("#hidden7").css("visibility", "visible")
+       };
+       if (count >= 6) {
+         console.log('1');
+         $("#hidden62").css("visibility", "visible")
+       };
+       if (count >= 7) {
+         console.log('1');
+         $("#hidden2").css("visibility", "visible")
+       };
+       if (count >= 8) {
+         console.log('1');
+         $("#hidden63").css("visibility", "visible")
+       };
+     });
+   });
+
+});
+
+$(".polzunok1").click(function(){
+   $(".circle-polzunok1").css({
+     top: function(index, value) {
+       return parseFloat (value) +30;
+     }
+   });
+   $(function () {
+     let count = 0;
+     $('.polzunok1').click(function () {
+       count += 1;
+       if (count >= 4) {
+         $('.circle-polzunok1').css({top: function(index, value) {
+           return parseFloat (value) -30;
+         }});
+       }
+       if (count == 1) {
+         $(".blok1").css("transform", scaleY(2)
+       );
+       }
+
+     });
+   });
+});
+$('.circle-botton').click(function() {
+  count += 1;
+  if (count >= 1) {
+    console.log('1');
+    $(this).css("transform", "rotate(40deg)");
+  };
+  if (count >= 2) {
+    console.log('1');
+    $(this).css("transform", "rotate(70deg)");
+  };
+  if (count >= 3) {
+    console.log('1');
+    $(this).css("transform", "rotate(95deg)");
+  };
+  if (count >= 4) {
+    console.log('1');
+    $(this).css("transform", "rotate(123deg)");
+  };
+  if (count == 5) {
+    console.log('1');
+    $(this).css("transform", "rotate(0deg)");
+  };
+});
+
+  $('.circle-botton2').click(function() {
+    count += 1;
+    if (count >= 1) {
+      console.log('1');
+      $(this).css("transform", "rotate(30deg)");
+    };
+    if (count >= 2) {
+      console.log('1');
+      $(this).css("transform", "rotate(60deg)");
+    };
+    if (count >= 3) {
+      console.log('1');
+      $(this).css("transform", "rotate(85deg)");
+    };
+    if (count >= 4) {
+      console.log('1');
+      $(this).css("transform", "rotate(-40deg)");
+    };
+    if (count >= 5) {
+      console.log('1');
+      $(this).css("transform", "rotate(-10deg)");
+    };
+    if (count >= 6) {
+      console.log('1');
+      $(this).css("transform", "rotate(10deg)");
+    };
+    });
+
+$(".botton4").click(function(){
+   $(".snow1 img, .snow2 img, .snow3 img").css("display", "none")
+   $("#botton_light4").css("visibility", "visible")
+});
+
+$(".botton1").click(function(){
+   $(".note1, .note2, .note3").css("visibility", "visible")
+   $("#botton_light1").css("visibility", "visible")
+});
+
+$(".botton3").click(function(){
+   $(".smoke1, .smoke2, .smoke1-2").css("display", "none")
+   $("#botton_light3").css("visibility", "visible")
+});
+
+$(".botton2").click(function(){
+		$(".window1, .window3, .window2, .window3, .window4, .window5, .window6,.window7,.window8,.window9,.window10,.window11,.window12,.window13,.window14,.window15,.window16,.window17,.window18,.window19,.window20").css("background","grey");
+    $("#botton_light2").css("visibility", "visible")
+	});
+
+$(".play2").click(function(){
+     $(".snow1 img, .snow2 img, .snow3 img").css("animation-play-state", "paused")
+     $(".smoke1, .smoke2, .smoke1-2").css("animation-play-state", "paused")
+  });
+
+  $(".play3").click(function(){
+  		$(".window1, .window3, .window2, .window3, .window4, .window5, .window6,.window7,.window8,.window9,.window10,.window11,.window12,.window13,.window14,.window15,.window16,.window17,.window18,.window19,.window20").css("background","radial-gradient(white, #ffda6c)");
+      $(".smoke1, .smoke2, .smoke1-2").css("display", "block");
+      $(".note1, .note2, .note3").css("visibility", "hidden");
+      $(".snow1 img, .snow2 img, .snow3 img").css("display", "block");
+       $("#botton_light3,#botton_light2,#botton_light1,#botton_light4").css("visibility", "hidden");
+       $(".snow1 img, .snow2 img, .snow3 img").css("animation-play-state", "running");
+       $(".smoke1, .smoke2, .smoke1-2").css("animation-play-state", "running");
+  	});
+    $(".play22").click(function(){
+         $(".snow1 img, .snow2 img, .snow3 img").css("animation-play-state", "paused")
+         $(".smoke1, .smoke2, .smoke1-2").css("animation-play-state", "paused")
+      });
+
+      $(".play23").click(function(){
+      		$(".window1, .window3, .window2, .window3, .window4, .window5, .window6,.window7,.window8,.window9,.window10,.window11,.window12,.window13,.window14,.window15,.window16,.window17,.window18,.window19,.window20").css("background","radial-gradient(white, #ffda6c)");
+          $(".smoke1, .smoke2, .smoke1-2").css("display", "block");
+          $(".note1, .note2, .note3").css("visibility", "hidden");
+          $(".snow1 img, .snow2 img, .snow3 img").css("display", "block");
+           $("#botton_light3,#botton_light2,#botton_light1,#botton_light4").css("visibility", "hidden");
+           $(".snow1 img, .snow2 img, .snow3 img").css("animation-play-state", "running");
+           $(".smoke1, .smoke2, .smoke1-2").css("animation-play-state", "running");
+      	});
+
+});
+
+    </script>
+  </head>
+
+  <body>
+<section class="snow">
+  <div class="snow1">
+  </div>
+  <div class="snow2">
+    <img src="images/9078.png" alt="">
+  </div>
+  <div class="snow3">
+    <img src="images/9078.png" alt="">
+  </div>
+</section>
+<!-- <div id="snow">
+  <img id="snow_img"src="images/9078.png" style="width: 100vw; height:100vh;">
+</div> -->
+<div class="smoke1">
+</div>
+<div class="smoke1-2">
+</div>
+<div class="smoke2">
+</div>
+
+<section class="panel">
+  <div class="back">
+  </div>
+
+  <div class="stroke">
+    <div align="center" class="title1">
+      <p>панель управления</p>
+    </div>
+  </div>
+
+  <div class="stroke2">
+    <div class="title2">
+      <p align="center" >внешние характеристики</p>
+    </div>
+</div>
+
+<div class="bolts">
+  <div class="bolt1">
+    <img src="images/Group 73.svg" alt="">
+  </div>
+  <div class="bolt2">
+    <img src="images/Group 73.svg" alt="">
+  </div>
+  <div class="bolt3">
+    <img src="images/Group 73.svg" alt="">
+  </div>
+  <div class="bolt-logo">
+    <img src="images/Mask Group.png" alt="">
+  </div>
+</div>
+
+<div class="bottons">
+  <div class="big-bottons">
+    <div class="botton1">
+      <img src="images/Group 79.svg" alt="">
+      <img id="botton_light1"src="images/Group 79 — копия.svg" alt="">
+      <p>пояснения</p>
+    </div>
+    <div class="botton2">
+      <img src="images/Group 79.svg" alt="">
+      <img id="botton_light2"src="images/Group 79 — копия.svg" alt="">
+      <p>свет</p>
+    </div>
+    <div class="botton3">
+      <img src="images/Group 79.svg" alt="">
+      <img id="botton_light3"src="images/Group 79 — копия.svg" alt="">
+      <p>дым</p>
+    </div>
+    <div class="botton4">
+      <img id="botton"src="images/Group 79.svg" alt="">
+      <img id="botton_light4"src="images/Group 79 — копия.svg" alt="">
+      <p>снег</p>
+    </div>
+
+  </div>
+
+  <div class="indicator">
+    <p>сложность</p>
+    <!-- <img src="images/Frame 29.svg" alt=""> -->
+  </div>
+  <div class="play">
+    <div class="play1">
+      <p>play</p>
+      <img src="images/Group 89.svg" alt="">
+    </div>
+    <div class="play2">
+      <p>pause</p>
+      <img src="images/Group 88.svg" alt="">
+    </div>
+    <div class="play3">
+      <p>restart</p>
+      <img src="images/Group 87.svg" alt="">
+    </div>
+  </div>
+  <div class="lights">
+    <!-- <img src="images/Frame 25.svg" alt=""> -->
+  </div>
+  <div class="screen">
+    <p>кол-во блоков</p>
+    <img src="images/Group 82.svg" alt="">
+    <div class="numbers"></div>
+  </div>
+  <div class="pm">
+      <img id="minus"src="images/Group 85.svg" alt="">
+      <img id="plus"src="images/Group 86.svg" alt="">
+  </div>
+  <div class="circle1">
+    <p>трубы</p>
+    <div class="circle-botton">
+      <img src="images/Group 91.svg" alt="">
+    </div>
+    <div class="points">
+      <img src="images/Group 92.svg" alt="">
+    </div>
+  </div>
+  <div class="circle2">
+    <p>окна</p>
+    <div class="circle-botton2">
+      <img src="images/Group 94.svg" alt="">
+    </div>
+    <div class="points2">
+      <img src="images/Group 93.svg" alt="">
+    </div>
+  </div>
+
+  <div class="polzunok1">
+    <img src="images/Group 97.svg" alt="">
+    <p>этажи</p>
+    <div class="circle-polzunok1">
+      <img src="images/Group 96.svg" alt="">
+    </div>
+  </div>
+
+  <div class="polzunok2">
+    <img src="images/Rectangle 113.svg" alt="">
+    <div class="circle-polzunok2">
+      <img src="images/Group 97 — копия.svg" alt="">
+    </div>
+  </div>
+
+</div>
+
+<div class="merzlota">
+  <img src="images/Frame.svg" alt="">
+</div>
+
+
+<div class="footter">
+  <p>ЗЛЫДНЕВА МАРИЯ, 2021 ГОД</p>
+</div>
+
+</section>
+
+<section class="zavod">
+
+  <div class="tube1">
+    <img src="images/Rectangle 69.svg" alt="">
+  </div>
+  <div class="tube2">
+    <img src="images/Rectangle 69.svg" alt="">
+  </div>
+  <div class="tube3">
+    <img src="images/Rectangle 69.svg" alt="">
+  </div>
+  <div class="tube4">
+    <img src="images/Rectangle 78.svg" alt="">
+  </div>
+  <div class="tube5">
+    <img src="images/Group 99.svg" alt="">
+  </div>
+  <div class="tube6">
+    <img src="images/Rectangle 69.svg" alt="">
+  </div>
+  <div class="tube7">
+    <img src="images/Rectangle 69.svg" alt="">
+  </div>
+  <div class="tube8">
+    <img src="images/Rectangle 69.svg" alt="">
+  </div>
+  <div class="tube9">
+    <img src="images/Rectangle 69.svg" alt="">
+  </div>
+  <div class="blok5">
+  </div>
+  <div class="blok1">
+    <div class="window1"></div>
+    <div class="window2"></div>
+    <div class="window3"></div>
+  <div class="window15"></div>
+  <div class="window16"></div>
+  <div class="window17"></div>
+    <img src="images/Rectangle 84.svg" alt="">
+    <img id="hidden1" src="images/Rectangle 84.svg" alt="">
+  </div>
+  <div class="blok2">
+    <img src="images/Rectangle 66.svg" alt="">
+    <img id="hidden2" src="images/Rectangle 66.svg" alt="">
+  </div>
+  <div class="blok10">
+  </div>
+  <div class="blok11">
+  </div>
+  <div class="blok3">
+      <div class="window7"></div>
+      <div class="window8"></div>
+      <div class="window9"></div>
+      <div class="window10"></div>
+    <img src="images/Rectangle 69.svg" alt="">
+  </div>
+  <div class="blok7">
+    <img src="images/Rectangle 66.svg" alt="">
+    <img id="hidden7" src="images/Rectangle 66.svg" alt="">
+  </div>
+  <div class="blok4">
+    <div class="window11"></div>
+    <div class="window14"></div>
+    <img src="images/Rectangle 68.svg" alt="">
+  </div>
+  <div class="blok6">
+      <img id="hidden6" src="images/Rectangle 84.svg" alt="">
+    <div class="window18"></div>
+    <div class="window19"></div>
+    <div class="window20"></div>
+    <img src="images/Rectangle 84.svg" alt="">
+    <img id="hidden62" src="images/Rectangle 84.svg" alt="">
+    <img id="hidden63" src="images/Rectangle 84.svg" alt="">
+  </div>
+  <div class="blok8">
+    <img id="hidden8"src="images/Rectangle 84.svg" alt="">
+    <div class="window12"></div>
+    <div class="window13"></div>
+    <img src="images/Rectangle 84.svg" alt="">
+  </div>
+  <div class="blok9">
+    <div class="window4"></div>
+    <div class="window5"></div>
+    <div class="window6"></div>
+    <img src="images/Rectangle 66.svg" alt="">
+    <img id="hidden9" src="images/Rectangle 66.svg" alt="">
+  </div>
+  <div class="blok12">
+  </div>
+  <div class="blok13">
+  </div>
+  <div class="blok14">
+  </div>
+  <div class="light1">
+    <img src="images/Group 77.svg" alt="">
+  </div>
+  <div class="light2">
+    <img src="images/Group 76.svg" alt="">
+  </div>
+  <div class="light3">
+    <img src="images/Group 100.svg" alt="">
+  </div>
+  <div class="note1">
+    <p>производственный цех</p>
+    <img src="images/Group 104.png" alt="">
+  </div>
+  <div class="note2">
+    <p>блок управления</p>
+    <img src="images/Group 105.png" alt="">
+  </div>
+  <div class="note3">
+    <p>хранилищный отсек</p>
+    <img src="images/Group 106.png" alt="">
+  </div>
+
+</section>
+
+    <div class="back2">
+    </div>
+    <div class="play21">
+      <p>play</p>
+      <img src="images/Group 89.svg" alt="">
+    </div>
+    <div class="play22">
+      <p>pause</p>
+      <img src="images/Group 88.svg" alt="">
+    </div>
+    <div class="play23">
+      <p>restart</p>
+      <img src="images/Group 87.svg" alt="">
+    </div>
+
+
+
+
+
+
+  </body>
+</html>
