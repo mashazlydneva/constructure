@@ -186,6 +186,9 @@ top: 11vh;
     transform: scale(0.9);
     margin-left: -2vw;
   }
+#hidden1{
+margin-left: -15vw;
+}
   .window1,.window2,.window3,.window15,.window17,.window16{
     left: 1.5vw;
   }
@@ -339,7 +342,7 @@ top: 11vh;
      .numbers {
        top: 2vh;
        left: 6vw;
-       width: 5vw;
+       width: 4.5vw;
      }
      .note1{
        left: 2vw;
@@ -353,6 +356,12 @@ top: 11vh;
      .blok1{
        transform: scale(0.9);
        margin-left: -2vw;
+     }
+     #hidden1{
+       margin-left: -16vw;
+     }
+     #hidden63{
+       margin-left: -16vw;
      }
      .window1,.window2,.window3,.window15,.window17,.window16{
        left: 1.5vw;
@@ -580,7 +589,7 @@ top: 11vh;
    .numbers{
      top: 2vh;
      left: 6vw;
-     width: 7vw;
+     width: 6vw;
    }
    .bolt2 img, .bolt-logo img{
      top: -4vh;
@@ -617,6 +626,15 @@ top: 11vh;
      .blok1{
        transform: scale(0.9);
        margin-left: -2vw;
+     }
+     #hidden1{
+       margin-left: -23vw;
+     }
+     #hidden63{
+       margin-left: -16.5vw;
+     }
+     #hidden9{
+       margin: -8vh 0 0 -5vw;
      }
      .window1,.window2,.window3,.window15,.window17,.window16{
        left: 2.5vw;
@@ -939,6 +957,15 @@ top: 11vh;
       transform: scale(0.7);
       margin-left: -6vw;
       top: 25vh;
+    }
+    #hidden1{
+      margin-left: -23vw;
+    }
+    #hidden63{
+      margin-left: -16.5vw;
+    }
+    #hidden9{
+      margin: -8vh 0 0 -5vw;
     }
     .window1,.window2,.window3,.window15,.window17,.window16{
       left: 2.5vw;
@@ -1340,6 +1367,18 @@ display: none;
    transform: scale(0.5);
    margin-left: -12vw;
    top: 25vh;
+ }
+ #hidden1{
+   margin-left: -48vw;
+ }
+ #hidden63{
+   margin-left: 0vw;
+ }
+ #hidden6{
+   margin-top: -12vw;
+ }
+ #hidden9{
+   margin: 0vh 0 0 -5vw;
  }
  .window1,.window2,.window3,.window15,.window17,.window16{
    left: 2.5vw;
